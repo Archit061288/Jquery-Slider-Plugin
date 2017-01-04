@@ -68,7 +68,7 @@
 				console.log($this.parent().width(),"t1")
 				setInterval(function(){
 					$this.animate({"left":'-'+$this.parent().width()},options.speed,function(){
-						$this.children(":first").css('left',0).appendTo($this);
+						$this.css('left',0).children(":first").appendTo($this);
 					})
 				},options.pause)
 
